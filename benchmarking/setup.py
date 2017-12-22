@@ -1,0 +1,20 @@
+from setuptools import setup,find_packages
+
+setup(name='awrams.benchmarking',
+      namespace_packages=['awrams'],
+      packages=['awrams.benchmarking','awrams.benchmarking.meta'],
+      # install_requires=['pandas==0.19.2',
+      #                   'numpy==1.11.2',
+      #                   'matplotlib==1.5.1'],
+      version='0.1',
+      description='benchmarking for AWRAL',
+      url='https://gitlab.bom.gov.au/awra/awrams_cm.git',
+      author='awrams team',
+      author_email='awrams@bom.gov.au',
+      license='MIT',
+      zip_safe=False,
+      include_package_data=True,
+      setup_requires=['nose>=1.3.3'],
+      test_suite='nose.collector',
+      tests_require=['nose'],
+)
